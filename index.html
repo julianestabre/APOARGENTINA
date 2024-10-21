@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apo Argentina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="menu container">
+            <a href="" class="logo">
+                <img src="images/Historias APO-23.png" alt="alt">
+            </a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Asociación Profesional de Optometras</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad non sit obcaecati nesciunt, quos maiores
+                    ducimus exercitationem incidunt a mollitia odit alias. Modi similique praesentium qui ipsa quia et
+                    nesciunt.
+                </p>
+                <a href="" class="btn-1">Más información</a>
+            </div>
+            <div class="header-img">
+                <img src="images/left.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="about container">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="about-txt">
+            <h2>Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam ea sit quas omnis inventore suscipit
+                consectetur voluptatibus odit amet sed dolore reprehenderit cupiditate voluptatem molestiae, libero ad
+                odio? Nihil!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus vero unde quidem nihil,
+                laudantium dignissimos dolorem recusandae porro sapiente, dolore perspiciatis aspernatur inventore
+                quisquam magni maiores neque commodi perferendis.</p>
+        </div>
+    </section>
+
+
+    <main class="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-content container">
+            <div class="servicio-1">
+                <i class="fa-regular fa-eye"></i>
+                <h3>Terapia Visual</h3>
+            </div>
+            <div class="servicio-1">
+                <i class="fa-regular fa-eye"></i>
+                <h3>Refracción visual</h3>
+            </div>
+            <div class="servicio-1">
+                <i class="fa-regular fa-eye"></i>
+                <h3>Baja Visión</h3>
+            </div>
+            <div class="servicio-1">
+                <i class="fa-regular fa-eye"></i>
+                <h3>Lentes de contacto</h3>
+            </div>
+        </div>
+    </main>
+    
+
+    <section class="formulario container">
+
+        <form method="post" autocomplete="off">
+
+            <h2>Agenda consulta</h2>
+
+            <div class="input-group">
+
+                <div class="input-container">
+                    <input type="text" name="name" placeholder="Nombre y apellido">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-container">
+                    <input type="tel" name="phone" placeholder="Telefono">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" placeholder="Correo electronico">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-container">
+                    <textarea name="message" placeholder="Detalles de la consulta"></textarea>
+                </div> 
+
+                <input type="submit" name="send" class="btn" onClick="myFunction()">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+            <div class="link">
+                <a href="" class="logo">
+                    <img src="images/Historias APO-23.png" alt="alt">
+                </a>
+            </div>
+
+            <div class="link">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <?php
+    include("send.php");
+    ?>
+
+    <script>
+        function myFunction(){
+            window.location.href="http://localhost/pagina"
+        }
+    </script>
+
+    <script src="menu.js"></script>
+
+
+
+</body>
+
+</html>
